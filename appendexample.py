@@ -1,0 +1,10 @@
+import csv
+f=open("stddata.csv","a",newline="")
+a=csv.writer(f)
+a.writerow(["stdid","rollno","name","phno"])
+stdid=int(input("enter id:"))
+rollno=input("enter roll no:")
+name=input("enter name:")
+phno=int(input("enter phone no:"))
+a.writerow([stdid,rollno,name,phno])
+print("successfully added data")
